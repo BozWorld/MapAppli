@@ -15,7 +15,7 @@ public class SplashActivity extends EpsiActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                HomeActivity.displayActivity(SplashActivity.this);
+                MainActivity.displayActivity(SplashActivity.this);
                 finish();
             }
         },2000);
