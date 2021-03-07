@@ -10,16 +10,14 @@ public class Student {
     private String prenom;
     private String email;
     private String group;
-    private String url_String;
 
     public Student(JSONObject o){
         avatar_URL = o.optString("avatar_URL","");
         description = o.optString("Description","");
-        nom = o.optString("name","");
+        nom = o.optString("nom","");
         prenom = o.optString("prenom","");
         email = o.optString("email","");
         group = o.optString("group","");
-        url_String = o.optString("url_String","");
     }
 
     public String getAvatar_URL(){
@@ -67,14 +65,6 @@ public class Student {
 
     public void setGroup(String group) {
         this.group = group;
-    }
-
-    public String geturl_String() {
-        return url_String;
-    }
-
-    public void seturl_String(String url_string) {
-        this.url_String = url_string;
     }
 
 }

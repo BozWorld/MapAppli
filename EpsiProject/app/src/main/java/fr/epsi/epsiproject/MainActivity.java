@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends EpsiActivity implements View.OnClickListener {
 
     String urlNature= "https://www.slate.fr/sites/default/files/styles/1060x523/public/lukasz-szmigiel-jfcviyfycus-unsplash.jpg";
     String urlEspace= "https://www.entreprendre.fr/wp-content/uploads/AdobeStock_2015532431.jpg";
@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Home");
-        findViewById(R.id.buttonCategorie).setOnClickListener(this);
         findViewById(R.id.buttonGroupe).setOnClickListener(this);
+        findViewById(R.id.buttonCategorie).setOnClickListener(this);
+
+
     }
 
 
@@ -30,17 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         switch (v.getId()){
-            case R.id.buttonCategorie:
-                CategorieActivity.displayActivity(this.urlNature);
-                break;
             case R.id.buttonGroupe:
                 GroupActivity.displayActivity(this);
                 break;
-                
-
-
-
-
+            case R.id.buttonCategorie:
+                CategorieActivity.displayActivity(this.urlNature);
+                break;
         }
     }
 }
