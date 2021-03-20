@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupActivity">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header"/>
+    <ImageView
+        android:id="@+id/AvatarStudent"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="15dp"/>
+    <TextView
+        android:id="@+id/textViewNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/textViewPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prenom"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/textViewGroupe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Groupe"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
