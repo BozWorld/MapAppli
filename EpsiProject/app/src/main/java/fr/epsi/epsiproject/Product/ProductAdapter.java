@@ -50,6 +50,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             @Override
             public void onClick(View v) {
                 ImagesProductActivity.displayActivity(activity,product.getPicture(),product.getDescription(), categorie);
+                activity.finish();
             }
         });
     }

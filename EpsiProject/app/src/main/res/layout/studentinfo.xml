@@ -6,48 +6,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GroupActivity">
-    <include
+    tools:context=".Student.GroupActivity">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/layout_header"/>
+        android:layout_height="60dp"
+        android:background="@color/LightSalmon"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESPI"
+            android:textSize="24dp"
+            android:textColor="@color/Lavender"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:adjustViewBounds="true">
+        </ImageView>
+
+
+    </RelativeLayout>
     <ImageView
         android:id="@+id/AvatarStudent"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:scaleType="fitXY"
         android:layout_marginEnd="15dp"/>
     <TextView
         android:id="@+id/textViewNom"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Nom"
-        android:textSize="16sp"
-        android:layout_centerVertical="true"
+        android:textSize="25sp"
         android:textColor="@color/black"/>
     <TextView
         android:id="@+id/textViewPrenom"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Prenom"
-        android:textSize="16sp"
+        android:textSize="25sp"
         android:layout_centerVertical="true"
         android:textColor="@color/black"/>
     <TextView
         android:id="@+id/textViewEmail"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="email"
-        android:textSize="14sp"
+        android:textSize="25sp"
         android:layout_centerVertical="true"
         android:textColor="@color/black"/>
     <TextView
         android:id="@+id/textViewGroupe"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Groupe"
-        android:textSize="16sp"
+        android:textSize="25sp"
         android:layout_centerVertical="true"
         android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textViewLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:text="http://epsi.fr/"
+        android:textColorLink="@color/Blue"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp" />
 
 </LinearLayout>

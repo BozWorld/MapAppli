@@ -23,7 +23,6 @@ public class ImagesActivity extends EpsiProjectActivity {
 
         ImageView imageView = findViewById(R.id.AfficheNature);
 
-        // String url = "https://www.slate.fr/sites/default/files/styles/1060x523/public/lukasz-szmigiel-jfcviyfycus-unsplash.jpg";
         String url = getIntent().getExtras().getString("url", "");
 
         Picasso.get().load(url).into(imageView);

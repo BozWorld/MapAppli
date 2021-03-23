@@ -39,7 +39,6 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
-
         <Button
             android:layout_marginTop="100dp"
             android:layout_width="wrap_content"
@@ -49,23 +48,9 @@
             android:height="100dp"
             android:adjustViewBounds="true"
             android:layout_centerInParent="true"
-            android:id="@+id/ButtonNature"
-            android:text="Student"
+            android:id="@+id/buttonGroupe"
+            android:text="Groupe"
             tools:ignore="MissingConstraints" />
-
-        <Button
-            android:layout_marginTop="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:width="150dp"
-            android:height="100dp"
-            android:adjustViewBounds="true"
-            android:layout_centerInParent="true"
-            android:id="@+id/ButtonEspace"
-            android:text="Espace"
-            tools:ignore="MissingConstraints" />
-
 
         <Button
             android:layout_marginTop="30dp"

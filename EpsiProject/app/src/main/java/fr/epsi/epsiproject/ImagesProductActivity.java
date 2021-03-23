@@ -29,7 +29,6 @@ public class ImagesProductActivity extends EpsiProjectActivity {
 
         TextView textView = findViewById(R.id.textViewTitleImage);
 
-        // String url = "https://www.slate.fr/sites/default/files/styles/1060x523/public/lukasz-szmigiel-jfcviyfycus-unsplash.jpg";
         String url = getIntent().getExtras().getString("url", "");
 
         String title = getIntent().getExtras().getString("description", "");

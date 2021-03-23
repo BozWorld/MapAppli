@@ -1,8 +1,9 @@
-package fr.epsi.epsiproject;
+package fr.epsi.epsiproject.Student;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,7 +14,12 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import fr.epsi.epsiproject.Student.Student;
+import fr.epsi.epsiproject.Categorie.CategorieWithWSActivity;
+import fr.epsi.epsiproject.Data;
+import fr.epsi.epsiproject.EpsiProjectActivity;
+import fr.epsi.epsiproject.HomeActivity;
+import fr.epsi.epsiproject.Product.ProductListWithWSActivity;
+import fr.epsi.epsiproject.R;
 
 public class GroupActivity extends EpsiProjectActivity{
 
@@ -45,6 +51,17 @@ public class GroupActivity extends EpsiProjectActivity{
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        ImageView buttonBack = findViewById(R.id.buttonBack);
+
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForMainActivity = new Intent(GroupActivity.this, HomeActivity.class);
+                startActivity(intentForMainActivity);
+                finish();
+            }
+        });
     }
 
 

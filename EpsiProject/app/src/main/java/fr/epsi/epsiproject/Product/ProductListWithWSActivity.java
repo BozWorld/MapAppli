@@ -23,8 +23,7 @@ import fr.epsi.epsiproject.WSCall;
 
 public class ProductListWithWSActivity extends EpsiProjectActivity {
 
-    // String wsUrl = "https://djemam.com/epsi/drink.json";
-    ArrayList<ProductList> products; //*
+    ArrayList<ProductList> products;
     ProductAdapter productAdapter;
     RecyclerView recyclerView;
     public static void displayActivity(EpsiProjectActivity activity, String Url){
@@ -37,9 +36,7 @@ public class ProductListWithWSActivity extends EpsiProjectActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-        String wsUrl = getIntent().getExtras().getString("wsUrlP", "https://djemam.com/epsi/drink.json");   // getIntent().getExtras().getString("url", "");
-        //setTitle("Students");
-        //showBack();
+        String wsUrl = getIntent().getExtras().getString("wsUrlP", "");   // getIntent().getExtras().getString("url", "");
         recyclerView=findViewById(R.id.recyclerViewP);
         products = new ArrayList<>();
         productAdapter = new ProductAdapter(this,products, wsUrl);

@@ -1,5 +1,6 @@
-package fr.epsi.epsiproject;
+package fr.epsi.epsiproject.Student;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import fr.epsi.epsiproject.Student.Student;
-import fr.epsi.epsiproject.Student.StudentActivity;
+import fr.epsi.epsiproject.EpsiProjectActivity;
+import fr.epsi.epsiproject.R;
 
 public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder>{
     EpsiProjectActivity activity;
@@ -51,7 +52,9 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder>{
         holder.getbuttonNom().setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                StudentActivity.displayActivity(activity);
+                Log.d("Activity", "####### PRENOM ###### : " + student.getPrenom());
+                StudentActivity.displayActivity(activity, student.getAvatar_URL(), student.getNom(), student.getPrenom(), student.getEmail(), student.getgroup());
+                activity.finish();
             }
         });
 

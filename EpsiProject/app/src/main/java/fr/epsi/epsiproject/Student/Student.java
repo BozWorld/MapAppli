@@ -15,7 +15,7 @@ public class Student {
         avatar_URL = o.optString("avatar_URL","");
         description = o.optString("Description","");
         nom = o.optString("nom","");
-        prenom = o.optString("prenom","");
+        prenom = o.optString("Prenom","");
         email = o.optString("email","");
         group = o.optString("group","");
     }

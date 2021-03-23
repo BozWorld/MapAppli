@@ -45,6 +45,7 @@ public class CategorieAdapter extends RecyclerView.Adapter<CategorieAdapter.View
             @Override
             public void onClick(View v) {
                 ProductListWithWSActivity.displayActivity(activity,categorie.getUrl());
+                activity.finish();
             }
         });
     }
